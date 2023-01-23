@@ -9,8 +9,7 @@
     width: 100%;
     height: 10vh;
     position: fixed;
-    z-index: 10; 
-
+    z-index: 10;
     /* padding: 10px;
     margin: 10px; */
     
@@ -62,6 +61,88 @@ font{
     justify-content: flex-start;
     align-items:center;
 }
+.projects{
+    width: 100%;
+    background-color: #45567d;
+}
+.container{
+    padding: 6rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.projectTitle{
+    max-width: fit-content;
+    text-align: center;
+    font-size: 2.8rem;
+    color: white;
+    border-bottom: 2px solid white;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+}
+.cards{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.card {
+    width: 400px;
+    background-color: #303841;
+    margin-top: 2.5rem;
+  }
+  .card_title {
+    font-size: 20px;
+    padding: 1.5rem 0rem;
+    color: rgba(255, 255, 255, 0.91);
+    text-align: center;
+  }
+  .card_title:hover{
+    
+      color: #ff7f50 ;
+    
+  }
+.card_link{
+  text-decoration: none;
+
+}
+  .card_link  img {
+    width: 400px;
+    height: 370px;
+    object-fit: cover;
+  }
+   .title:hover {
+    color: #ff7f50;
+    
+  } 
+
+  .title {
+    font-size: 21px;
+    padding: 1.5rem 0rem;
+    color: rgba(255, 255, 255, 0.91);
+    text-align: center;
+     /* display: none; */
+  }
+ 
+  .add_new_card {
+    margin-top: 4rem;
+  }
+  .add_new_card  a {
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    background-color: #303841;
+    color: white;
+    font-size: 22px;
+    border-radius: 3px;
+  }
+ 
+  .add_new_card  a:hover {
+    background: #be3144;
+  }
+  .add_new_card  a:hover i {
+    transform: translateX(2px);
+  }
 .projectFont{
     border-bottom: 2px solid white;
     font-weight: 600;
@@ -100,6 +181,9 @@ font{
     display:flex ;
     flex-direction: row;
     gap:40px;
+    justify-content: center;
+    width: 100%;
+    height: 50vh;
     margin-top: 30px;
 }
 .item{
@@ -116,56 +200,10 @@ font{
     color: white;
     font-size: 20px;
 }
-.projectGrid{
-display: grid;
-height: 60vh;
-gap:10px;
-background-color: #45567d;
-width: 80%;
-padding-top: 10px;
-box-sizing: border-box;
-grid-template-columns: repeat(2,2fr) ;
-grid-template-rows: 2fr 2fr , 2fr; 
-grid-template-areas: 'box1 box2'
-'box3 box4'
-'box5 box6';
-}
-.box1, .box2, .box3, .box4, .box5, .box6{
-    width: 250px;
-    height: 250px;
-}
-.box1{
-    grid-area: box1;
-}
-.box2{
-    grid-area: box2;
-}
-.box3{
-    grid-area: box3;
-}
-.box4{
-    grid-area: box4;
-}
-.box5{
-    grid-area: box5;
-}
-.box6{
-    grid-area: box6;
-}
+
 .footer{
     border-top: 2px solid red;
     display: flex;
-}
-
-.title{
-    display: none;
-}
-
-.grid1:hover .title{
-    display: block;
-}
-
-.grid1{
-    display: flex;
-    flex-direction: row;
+    width: 100%;
+    justify-content: center;
 }
